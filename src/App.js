@@ -16,7 +16,7 @@ const App = () => {
 
     try {
       // Send the voice command to the backend for processing
-      const result = await axios.post("http://localhost:5000/command", {
+      const result = await axios.post("https://assist-server-ra3i.onrender.com/command", {
         command: command,
       });
 
